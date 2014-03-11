@@ -26,7 +26,7 @@ for page in @list
   @politicians << [@party.strip, @name.strip, @email.strip, @region.strip]
 end
 
-CSV.open("tester.csv", "wb") do |csv|
+CSV.open("PLQ.csv", "wb") do |csv|
   i = 0
   @politicians.each do
     csv << ["#{@politicians[i][0]}", "#{@politicians[i][1]}", "#{@politicians[i][2]}", "#{@politicians[i][3]}"]
