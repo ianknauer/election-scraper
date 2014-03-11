@@ -1,0 +1,3 @@
+agent = Mechanize.new
+page = agent.get "http://google.com"
+node = page.search "///p[}"
